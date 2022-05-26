@@ -11,22 +11,35 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-
+    
     <div class="container">
         <header class="site-header">
             <a class="logo-link" href="#">
-                 <img class="logo" src="img/logo.svg" alt="Bookmark logo" width="149" height="25">
+                <img class="logo" src="img/logo.svg" alt="Bookmark logo" width="149" height="25">
             </a>
             <nav class="sitenav">
-                <ul class="sitenav-items">
-                    <li class="sitenav-item"><a class="sitenav-item-link" href="#">Features</a></li>
-                    <li class="sitenav-item"><a class="sitenav-item-link" href="#">Pricing</a></li>
-                    <li class="sitenav-item"><a class="sitenav-item-link" href="#">Contact</a></li>
+                <ul class="sitenav__items">
+                    <li class="sitenav__item"><a class="sitenav__link" href="#">Features</a></li>
+                    <li class="sitenav__item"><a class="sitenav__link" href="#">Pricing</a></li>
+                    <li class="sitenav__item"><a class="sitenav__link" href="#">Contact</a></li>
                 </ul>
             </nav>
             <a class="btn" href="#">Login</a>
         </header>
     </div>
-
+    <main class="main-content">
+        <div class="hero">
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <h2 class="hero__heading">A Simple Bookmark Manager</h2>
+                    <p class="hero__text">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+                    <a class ="btn btn--medium" href="#">Get it on Chrome</a>
+                    <a class ="btn btn--medium btn--medium-grey" href="#">Get it on Firefox</a>
+                </div>
+                <img class="hero__img" src="img/page.png" alt="Page" width="578" height="385" srcset="img/page.png 1x, img/page.png@2x 2x">
+            </div>
+        </div>
+    </main>
+    
 </body>
 </html>
