@@ -147,7 +147,7 @@ a {
 }
 
 .sitenav__link:hover {
-    color: var(--text-hover);
+    color: var(--input-bottom);
 }
 
 .btn {
@@ -180,7 +180,7 @@ a {
 
 .btn--red:hover {
     background-color: var(--body-bg-color);
-    color: var(--text-hover);
+    color: var(--input-bottom);
     border: 2px solid var(--input-bottom);
 }
 
