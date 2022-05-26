@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bookmark</title>
+    <!-- cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <!-- STYLES -->
     <link rel="stylesheet" href="css/normalize.css">
@@ -93,14 +95,14 @@
                     <span class="list__text">Minimum version 62</span>
                     <a class="btn" href="https://www.google.ru/intl/ru/chrome/thank-you.html?brand=YTUH&statcb=1&installdataindex=empty&defaultbrowser=0" target="_blank">Add & Install Extension</a>
                 </li>
-
+                
                 <li class="list__item list__item--second">
                     <img class="list__img" src="img/firefox.svg" alt="" width="102" height="100">
                     <h3 class="list__heading">Add to Firefox</h3>
                     <span class="list__text">Minimum version 55</span>
                     <a class="btn" href="https://www.mozilla.org/ru/firefox/new/" target="_blank">Add & Install Extension</a>
                 </li>
-
+                
                 <li class="list__item list__item--third">
                     <img class="list__img" src="img/opera.svg" alt="" width="102" height="100">
                     <h3 class="list__heading">Add to Opera</h3>
@@ -109,10 +111,86 @@
                 </li>
             </ul>
         </div>
-
-
-
-    </main>
-    
-</body>
-</html>
+        
+        <!-- Questions -->
+        <div class="questions">
+            <div class="questions__about">
+                <h2 class="questions__heading">Advanced questions</h2>
+                <p class="questions__text">Track how your links are performing across the web with our advanced questions dashboard.</p>
+            </div>
+            
+            <div class="questions__wrapper">
+                <section class="questions__item">
+                    <div class="questions__item-header js-questions-item">
+                        <h2 class="questions__item-title">What is Bookmark?</h2>
+                        <button class="questions__icon-btn">
+                            <i class="down-icon fa-solid fa-angle-down"></i>
+                        </button>
+                    </div>
+                    <div class="questions__item-texts js-questions-text visuallyhidden">
+                        <p class="questions__item-text">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+                            ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+                        </div>
+                    </section>
+                    
+                    <section class="questions__item">
+                        <div class="questions__item-header js-questions-item">
+                            <h2 class="questions__item-title">How can I request a new browser?</h2>
+                            <button class="questions__icon-btn">
+                                <i class="down-icon fa-solid fa-angle-down"></i>
+                            </button>
+                        </div>
+                        <div class="questions__item-texts js-questions-text visuallyhidden">
+                            <p class="questions__item-text">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+                                ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+                            </div>
+                        </section>
+                        
+                        <section class="questions__item">
+                            <div class="questions__item-header js-questions-item">
+                                <h2 class="questions__item-title">Is there a mobile app?</h2>
+                                <button class="questions__icon-btn">
+                                    <i class="down-icon fa-solid fa-angle-down"></i>
+                                </button>
+                            </div>
+                            <div class="questions__item-texts js-questions-text visuallyhidden">
+                                <p class="questions__item-text">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+                                    ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+                                </div>
+                            </section>
+                            
+                            <section class="questions__item">
+                                <div class="questions__item-header js-questions-item">
+                                    <h2 class="questions__item-title">What about other Chromium browsers?</h2>
+                                    <button class="questions__icon-btn">
+                                        <i class="down-icon fa-solid fa-angle-down"></i>
+                                    </button>
+                                </div>
+                                <div class="questions__item-texts js-questions-text visuallyhidden">
+                                    <p class="questions__item-text">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+                                        ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="btn-wrapper">
+                                <a class="btn" href="#" target="_blank">More Info</a>
+                            </div>
+                        </div>
+                        
+                        <!-- CTA -->
+                        <div class="cta" id="index-cta">
+                            <div class="cta__wrapper">
+                                <span class="cta__text">35,000+ ALREADY JOINED</span>
+                                <h2 class="cta__heading">Stay up-to-date with what
+                                    we’re doing</h2>
+                                <form class="cta__connect">
+                                    <input class="cta__input" type="email" placeholder="Enter your email address" required>
+                                    <div class="form__error-msg">Please add a link</div>
+                                    <button class="btn btn--cta">Contact Us</button>
+                                </form>
+                            </div>
+                        </div>
+                    </main>
+                <script src="main.js"></script>
+            </body>
+        </html>

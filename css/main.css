@@ -2,6 +2,7 @@
     --heading-text: #242A45;
     --features-heading-text: rgba(36, 42, 69, 0.75);
     --text-color: rgba(36, 42, 69, 0.5);
+    --border-color: rgba(36, 42, 69, 0.15);
     --btn-color: #5267DF;
     --btn-two-bg: #f7f7f7;
     --font-family: "Rubik", "Arial", sans-serif;
@@ -57,6 +58,18 @@ body {
     color: var(--text-color);
 }
 
+/* Visually hidden */
+.visuallyhidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 img {
     max-width: 100%;
     height: auto;
@@ -78,6 +91,7 @@ a {
 
 .main-content {
     flex-grow: 1;
+    padding-bottom: 200px;
 }
 
 /* Header */
@@ -237,6 +251,10 @@ a {
 
 
 /* Features */
+.features {
+    padding-bottom: 75px;
+}
+
 .features__about {
     width: 540px;
     text-align: center;
@@ -346,8 +364,8 @@ input[type=radio]:checked ~ label ~ .tab__content {
     width: 911px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 149px;
-    padding-bottom: 149px;
+    padding-top: 75px;
+    padding-bottom: 75px;
 }
 
 .extension__about {
@@ -438,4 +456,160 @@ input[type=radio]:checked ~ label ~ .tab__content {
 
 .list__item--third {
     margin-top: 80px;
+}
+
+/* Questions */
+.questions {
+    width: 540px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.questions__about {
+    margin-bottom: 56px;
+}
+
+.questions__heading {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 52px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: var(--heading-text);
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.questions__text {
+    margin: 0;
+}
+
+.questions__wrapper {
+    border-top: 1px solid var(--border-color);
+    margin-bottom: 54px;
+}
+
+.questions__item {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.questions__item-header {
+    display: flex;
+    padding-top: 19px;
+    padding-bottom: 13px;
+    cursor: pointer;
+}
+
+.questions__item-title {
+    text-align: left;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 400;
+    color: var(--heading-text);
+    margin: 0;
+    flex-grow: 1;
+    margin-right: 24px;
+}
+
+.questions__icon-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.down-icon {
+    font-size: 16px;
+    color: var(--btn-color);
+}
+
+.questions__item-text {
+    font-size: 16px;
+    line-height: 36px;
+    letter-spacing: 0.15px;
+    color: var(--features-heading-text);
+    mix-blend-mode: normal;
+    text-align: left;
+}
+
+/* CTA */
+.cta {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    margin-top: 75px;
+    background-color: var(--btn-color);
+    color: var(--body-bg-color);
+}
+
+.cta__wrapper {
+    width: 442px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.cta__text {
+    font-size: 13px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 5px;
+    margin-bottom: 24px;
+}
+
+.cta__heading {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    margin: 0;
+    margin-bottom: 36px;
+}
+
+.cta__connect {
+    display: flex;
+}
+
+.cta__input {
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    color: rgba(36, 42, 69, 0.250109);
+    min-width: 300px;
+    padding: 10px 20px; 
+    margin-right: 16px;
+}
+
+.btn--cta {
+    white-space: nowrap;
+    background-color: var(--input-bottom);
+    border: 2px solid transparent;
+}
+
+.btn--cta:hover {
+    background-color: var(--body-bg-color);
+    color: var(--input-bottom);
+    border: 2px solid var(--input-bottom);
+}
+
+/* .cta__input:not(:focus):not(:placeholder-shown):invalid {
+	border: 2px solid var(--input-bottom);
+    color: var(--input-bottom);
+}
+
+.cta__input:not(:focus):not(:placeholder-shown):invalid ~ .form__error-msg {
+    display: block;
+    position: absolute;
+    top: 124px;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 18px;
+    letter-spacing: 0.109091px;
+    color: var(--input-bottom);
+} */
+
+.form__error-msg {
+    display: none;
 }
