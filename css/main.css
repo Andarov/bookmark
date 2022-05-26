@@ -708,6 +708,7 @@ input[type=radio]:checked ~ label ~ .tab__content {
 
 .socials__link svg {
     color: var(--body-bg-color);
+    transition: color 0.4s ease;
 }
 
 .socials__link svg:hover {
