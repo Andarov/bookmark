@@ -298,8 +298,8 @@ a {
 .tabs-wrapper {
     background-image: url(../img/ellips.svg);
     background-repeat: no-repeat;
-    background-position: calc(50% - 560px) calc(50% + 99px);
-    padding-bottom: 350px;
+    background-position: calc(50% - 585px) calc(50% + 99px);
+    padding-bottom: 360px;
 }
 
 .tabs {
@@ -394,7 +394,7 @@ input[type=radio]:checked ~ label ~ .tab__content {
     width: 911px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 75px;
+    padding-top: 70px;
     padding-bottom: 75px;
 }
 
@@ -566,15 +566,15 @@ input[type=radio]:checked ~ label ~ .tab__content {
 
 /* CTA */
 .cta {
-    padding-top: 58px;
-    padding-bottom: 74px;
-    margin-top: 75px;
+    margin-top: 79px;
     background-color: var(--btn-color);
     color: var(--body-bg-color);
 }
 
 .cta__wrapper {
     width: 442px;
+    padding-top: 58px;
+    padding-bottom: 100px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -654,7 +654,7 @@ input[type=radio]:checked ~ label ~ .tab__content {
 
 /* Footer */
 .footer {
-    padding-top: 32px;
+    padding-top: 31px;
     padding-bottom: 31px;
     background-color: var(--heading-text);
 }
