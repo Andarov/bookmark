@@ -322,8 +322,12 @@ a {
     font-size: 16px;
     line-height: 17px;
     letter-spacing: 0.533333px;
-    color: var(--heading-text);
+    color: var(--features-heading-text);
     border-bottom: 1px solid rgba(73, 93, 207, 0.20012);
+}
+
+.tab label:hover {
+    color: var(--input-bottom);
 }
 
 .tab input[type=radio] {
@@ -332,6 +336,7 @@ a {
 
 input[type=radio]:checked ~ label {
     background-color: var(--body-bg-color);
+    color: var(--heading-text);
     border-bottom: 4px solid var(--input-bottom);
 }
 
