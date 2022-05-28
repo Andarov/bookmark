@@ -20,13 +20,22 @@
     font-display: swap;
   }
 
-  @font-face {
+@font-face {
     font-family: "Rubik";
     font-style: normal;
     font-weight: 500;
     src:url("../fonts/rubik-v20-latin-500.woff2") format("woff2"),
          url("../fonts/rubik-v20-latin-500.woff") format("woff");
     font-display: swap;
+  }
+
+@font-face {
+    font-family: "Rubik";
+    font-style: italic;
+    font-weight: 500;
+    src:url("../fonts/rubik-v20-latin-500italic.woff2") format("woff2"), 
+         url("../fonts/rubik-v20-latin-500italic.woff") format("woff");
+    font-display: swap;   
   }
 
 html {
@@ -589,6 +598,7 @@ input[type=radio]:checked ~ label ~ .tab__content {
 
 .cta__connect {
     display: flex;
+    position: relative;
 }
 
 .cta__input {
@@ -599,6 +609,33 @@ input[type=radio]:checked ~ label ~ .tab__content {
     min-width: 300px;
     padding: 10px 20px; 
     margin-right: 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+.cta__input:not(:focus):not(:placeholder-shown):invalid {
+	border: 2px solid var(--input-bottom);
+    color: var(--input-bottom);
+}
+
+.cta__input:not(:focus):not(:placeholder-shown):invalid + .cta__error-msg {
+    display: block;
+    position: absolute;
+    top: calc(100% - 5px);
+    font-weight: 500;
+    font-style: italic;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.25px;
+    text-align: left;
+    padding: 6px 12px 6px;
+    background-color: var(--input-bottom);
+    color: var(--body-bg-color);
+    width: 300px;
+}
+
+.cta__error-msg {
+    display: none;
 }
 
 .btn--cta {
@@ -611,26 +648,6 @@ input[type=radio]:checked ~ label ~ .tab__content {
     background-color: var(--body-bg-color);
     color: var(--input-bottom);
     border: 2px solid var(--input-bottom);
-}
-
-/* .cta__input:not(:focus):not(:placeholder-shown):invalid {
-	border: 2px solid var(--input-bottom);
-    color: var(--input-bottom);
-}
-
-.cta__input:not(:focus):not(:placeholder-shown):invalid ~ .form__error-msg {
-    display: block;
-    position: absolute;
-    top: 124px;
-    font-size: 16px;
-    font-style: italic;
-    line-height: 18px;
-    letter-spacing: 0.109091px;
-    color: var(--input-bottom);
-} */
-
-.cta__error-msg {
-    display: none;
 }
 
 /* Footer */
