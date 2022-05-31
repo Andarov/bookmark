@@ -343,35 +343,34 @@ input[type=radio]:checked ~ label {
 input[type=radio]:checked ~ label ~ .tab__text-wrapper,
 input[type=radio]:checked ~ label ~ .tab__content {
     display: flex;
+    justify-content: flex-end;
 }
 
 .tab__content {
     position: absolute;
     align-items: center;
     top: 125px;
-    left: 0;
+    right: 0;
     display: none;
-    padding-bottom: 89px;
 }
 
-.tab__img {
+.tab__img--bookmark {
     width: 536px;
     height: 346px;
     margin-right: 125px;
 }
 
+
 .tab__img--search {
     width: 468px;
     height: 393px;
     margin-right: 118px;
-    margin-left: 60px;
 }
 
 .tab__img--share {
     width: 440px;
     height: 380px;
     margin-right: 146px;
-    margin-left: 90px;
 }
 
 .tab__text-wrapper {
