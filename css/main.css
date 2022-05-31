@@ -174,7 +174,7 @@ a {
     color: var(--body-bg-color);
     border-radius: 5px;
     margin-left: 0;
-    padding: 8px 28px;
+    padding: 8px 22px;
     transition: color 0.4s ease,
     border 0.4s ease,
     background-color 0.4s ease;
@@ -616,9 +616,9 @@ input[type=radio]:checked ~ label ~ .tab__content {
 }
 
 .cta__wrapper {
-    width: 442px;
-    padding-top: 58px;
-    padding-bottom: 100px;
+    width: 450px;
+    padding-top: 46px;
+    padding-bottom: 74px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -647,11 +647,16 @@ input[type=radio]:checked ~ label ~ .tab__content {
     position: relative;
 }
 
+.cta__input-wrapper {
+    position: relative;
+    z-index: 555;
+}
+
 .cta__input {
     font-size: 14px;
     line-height: 28px;
     letter-spacing: 0.25px;
-    color: rgba(36, 42, 69, 0.250109);
+    color: var(--heading-text);
     min-width: 300px;
     padding: 10px 20px; 
     margin-right: 16px;
@@ -661,23 +666,27 @@ input[type=radio]:checked ~ label ~ .tab__content {
 
 .cta__input:not(:focus):not(:placeholder-shown):invalid {
 	border: 2px solid var(--input-bottom);
-    color: var(--input-bottom);
+    background-image: url(../img/error.svg);
+    background-repeat: no-repeat;
+    background-position: right 14px center;
 }
 
 .cta__input:not(:focus):not(:placeholder-shown):invalid + .cta__error-msg {
     display: block;
     position: absolute;
-    top: calc(100% - 5px);
+    z-index: -555;
+    top: calc(100% - 4px);
     font-weight: 500;
     font-style: italic;
     font-size: 10px;
     line-height: 12px;
     letter-spacing: 0.25px;
     text-align: left;
-    padding: 6px 12px 6px;
+    padding: 6px 12px;
     background-color: var(--input-bottom);
     color: var(--body-bg-color);
     width: 300px;
+    border-radius: 0 0 5px 5px;
 }
 
 .cta__error-msg {
