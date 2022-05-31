@@ -538,9 +538,9 @@ input[type=radio]:checked ~ label ~ .tab__content {
 .questions__item-header {
     position: relative;
     display: flex;
-    padding-top: 19px;
+    padding-top: 20px;
     padding-bottom: 13px;
-    cursor: pointer;
+    padding-right: 28px;
 }
 
 .questions__item-title {
@@ -563,6 +563,7 @@ input[type=radio]:checked ~ label ~ .tab__content {
     background-color: transparent;
     border: none;
     padding: 0;
+    cursor: pointer;
 }
 
 .questions__icon-btn:focus {
@@ -579,7 +580,7 @@ input[type=radio]:checked ~ label ~ .tab__content {
 }
 
 .down-icon {
-    font-size: 16px;
+    font-size: 21px;
     color: var(--btn-color);
 }
 
@@ -609,7 +610,7 @@ input[type=radio]:checked ~ label ~ .tab__content {
 
 /* CTA */
 .cta {
-    margin-top: 79px;
+    margin-top: 75px;
     background-color: var(--btn-color);
     color: var(--body-bg-color);
 }
