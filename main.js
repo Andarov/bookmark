@@ -5,9 +5,8 @@ let elQuestionsIcon = document.querySelectorAll(".down-icon");
 
 elQuestionsItem.forEach(function(item,index) {
     item.addEventListener("click", function () {
-        elQuestionsText[index].classList.toggle("visuallyhidden")
+        elQuestionsText[index].classList.toggle("questions__item-texts--open")
         elQuestionsIcon[index].classList.toggle("fa-angle-up")
-        elQuestionsHeading[index].style.color = "red";
-        elQuestionsIcon[index].style.color = "red";
+        // elQuestionsIcon[index].style.color = "red";
     })
 })

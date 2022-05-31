@@ -55,6 +55,11 @@ html {
     outline-offset: 3px;
 }
 
+.questions__icon-btn:focus::before {
+    outline: 3px dashed var(--text-color);
+    outline-offset: 3px;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -531,6 +536,7 @@ input[type=radio]:checked ~ label ~ .tab__content {
 }
 
 .questions__item-header {
+    position: relative;
     display: flex;
     padding-top: 19px;
     padding-bottom: 13px;
@@ -548,15 +554,45 @@ input[type=radio]:checked ~ label ~ .tab__content {
     margin-right: 24px;
 }
 
+.questions__item-header:hover .questions__item-title {
+    color: var(--input-bottom);
+}
+
 .questions__icon-btn {
+    display: block;
     background-color: transparent;
     border: none;
     padding: 0;
 }
 
+.questions__icon-btn:focus {
+    outline: none;
+}
+
+.questions__icon-btn::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+}
+
 .down-icon {
     font-size: 16px;
     color: var(--btn-color);
+}
+
+.questions__item-texts {
+    display: none;
+}
+
+.questions__item-texts--open {
+    display: block;
+}
+
+.fa-angle-up.down-icon {
+    color: var(--input-bottom);
 }
 
 .questions__item-text {
@@ -566,6 +602,9 @@ input[type=radio]:checked ~ label ~ .tab__content {
     color: var(--features-heading-text);
     mix-blend-mode: normal;
     text-align: left;
+    margin: 0;
+    padding-top: 19px;
+    padding-bottom: 29px;
 }
 
 /* CTA */
