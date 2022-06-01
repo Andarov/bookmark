@@ -51,13 +51,12 @@ html {
 }
 
 *:focus {
-    outline: 3px dashed var(--text-color);
+    outline: 3px dashed var(--input-bottom);
     outline-offset: 3px;
 }
 
 .questions__icon-btn:focus::before {
-    outline: 3px dashed var(--text-color);
-    outline-offset: 3px;
+    outline: 3px dashed var(--input-bottom);
 }
 
 body {
