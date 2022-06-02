@@ -616,7 +616,7 @@ input[type=radio]:checked ~ label ~ .tab__content {
 }
 
 .cta__wrapper {
-    width: 450px;
+    width: 442px;
     padding-top: 46px;
     padding-bottom: 74px;
     margin-left: auto;
